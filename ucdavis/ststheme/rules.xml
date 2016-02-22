@@ -1,0 +1,67 @@
+<rules xmlns="http://namespaces.plone.org/xdv">
+	<!--<theme href="index.html"/>
+	<theme href="frontpage.html" css:if-content="body.section-front-page"/>-->
+
+<!--<theme css:if-content="body.section-front-page" href="frontpage.html"/>-->
+<theme href="index.html"/>
+
+    <!-- title -->
+    <replace content='/html/head/title'    
+               theme='/html/head/title' />
+			   
+	<!-- Base tag -->
+    <replace theme="/html/head/base" content="/html/head/base" />
+
+    <!-- prepend theme="/html/head" content="/html/head/link | /html/head/style" / -->
+
+    <prepend theme="/html/head" content="/html/head/script" />
+    
+    <prepend content="/html/body/@class" theme="/html/body" /> 
+
+
+
+
+    <!-- header area -->
+<!--    <replace content='//*[@id="portal-logo"]'    
+               theme='//*[@id="logo-a"]' />-->
+
+    <replace content='//*[@id="portal-globalnav"]' 
+            theme='//*[@id="links"]' />
+
+    <replace content='//*[@id="portal-siteactions"]/li' 
+            theme='//*[@id="portal-siteactions"]' />
+
+    <replace content='//*[@id="portal-personaltools"]' 
+            theme='//*[@id="personal-tools"]' />
+
+
+    <!-- content area -->
+    <replace content='//*[@id="portal-breadcrumbs"]'    
+               theme='//*[@id="breadcrumbs"]' />
+ <drop content='//*[@id="viewlet-above-content"]' />
+ <drop content='//*[@id="breadcrumbs-you-are-here"]' />
+               
+    <prepend content='//*[@id="portal-column-content"]/div'    
+               theme='//*[@id="main"]' />
+
+
+    <!-- Portlets -->
+   <prepend content='//*[@id="portal-column-one"]/div' 
+         theme='//*[@id="sidebar"]' />
+
+
+
+    <!-- Footer -->
+ <!--   <copy content='//*[@id="portal-searchbox"]' 
+            theme='//*[@id="search"]' />-->
+            
+   <copy content='//*[@id="portal-footer"]' 
+         theme='//*[@id="ftrinfo"]' />
+         
+ <!--  <copy content='//*[@id="portal-colophon"]/div/ul' 
+         theme='//*[@id="ftr-info"]' />-->
+
+
+   <drop content='//*/dl/dd/a/img' /> 
+
+</rules> 
