@@ -1,4 +1,4 @@
-<rules xmlns="http://namespaces.plone.org/xdv">
+<rules xmlns="http://namespaces.plone.org/diazo">
 	<!--<theme href="index.html"/>
 	<theme href="frontpage.html" css:if-content="body.section-front-page"/>-->
 
