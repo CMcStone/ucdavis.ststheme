@@ -42,10 +42,8 @@ setup(name='ucdavis.ststheme',
           'plone.app.theming',
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-
-      [z3c.autoinclude.plugin]
-      target = plone
-      """,
-      )
+      
+      entry_points={
+                'z3c.autoinclude.plugin': 'target = plone',
+            },
+            )

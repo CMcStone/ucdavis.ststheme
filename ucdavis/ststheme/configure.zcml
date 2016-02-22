@@ -1,9 +1,21 @@
 <configure
     xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns="http://namespaces.zope.org/zope">
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ucdavis.ststheme">
+    
+    <five:registerPackage package="." initialize=".initialize" />
+    
 
+    <genericsetup:registerProfile
+        name="default" title="STS Theme" directory="profiles/default"
+        description="Installs the ucdavis.ststheme package"
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
+    
+    
     <plone:static
-        directory="ststheme" type="theme" />
+        directory="static" type="theme" />
 
 </configure>
