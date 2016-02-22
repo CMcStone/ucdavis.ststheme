@@ -6,7 +6,7 @@ version = '0.1.0'
 setup(name='ucdavis.ststheme',
       version=version,
       description="An installable Diazo theme for Plone 4.1 or higher",
-      long_description=open("README.md").read()
+      long_description=open("README.md").read(),
       
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
