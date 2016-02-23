@@ -1,8 +1,11 @@
-<rules xmlns="http://namespaces.plone.org/diazo">
+<rules xmlns="http://namespaces.plone.org/diazo"
+	    xmlns:css="http://namespaces.plone.org/diazo/css"
+	    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<!--<theme href="index.html"/>
 	<theme href="frontpage.html" css:if-content="body.section-front-page"/>-->
 
 <!--<theme css:if-content="body.section-front-page" href="frontpage.html"/>-->
+	<theme css:if-content="body.template-solgemafullcalendar_view" href="index_cal.html" />
 <theme href="index.html"/>
 
     <!-- title -->
@@ -12,15 +15,33 @@
 	<!-- Base tag -->
     <replace theme="/html/head/base" content="/html/head/base" />
 
-    <!-- prepend theme="/html/head" content="/html/head/link | /html/head/style" / -->
+    <prepend theme="/html/head" content="/html/head/link | /html/head/style" />
+    <!--drop the css I don't want -->
+    <drop css:content="link[href*='reset']" />
+          <drop css:content="link[href$='forms.css']" />
+          <drop css:content="link[href$='controlpanel.css']" />
+          <drop css:content="link[href$='authoring.css']" />
+          <drop css:content="link[href$='public.css']" />
+          <drop css:content="link[href$='columns.css']" />
+          <drop css:content="link[href$='portlets.css']" />
+          <drop css:content="link[href$='discussion.css']" />
+          <drop css:content="link[href$='ploneKss.css']" />
+          <drop css:content="link[href$='print.css']" />
+          <drop css:content="link[href$='mobile.css']" />
+          <drop css:content="link[href*='base']" />
+		<drop css:content="link[href$='ploneCustom.css']" />
 
     <prepend theme="/html/head" content="/html/head/script" />
     
     <prepend content="/html/body/@class" theme="/html/body" /> 
 
-
-
-
+    <rules css:if-content="body.template-solgemafullcalendar_view">
+       <after css:theme-children="html head">
+	    <style type="text/css" media="all">@import url(portal_css/Sunburst%20Theme/solgema_contextualcontentmenu.css);</style>
+         <link rel="stylesheet" type="text/css" media="screen" href="portal_css/Sunburst%20Theme/++resource++collective.js.fullcalendar/fullcalendar.view.css" />
+    
+       </after>
+  </rules>
     <!-- header area -->
 <!--    <replace content='//*[@id="portal-logo"]'    
                theme='//*[@id="logo-a"]' />-->

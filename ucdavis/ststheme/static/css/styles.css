@@ -139,7 +139,10 @@ body, #menu a:hover, #menu li.active a {
 	clear: both;
 	position: relative;
 	z-index: 8;
-	/*border-top: 1px dotted #2a466f;*/
+	/*border-top: 1px dotted #2a466f;*/	
+}
+#main.full-width {
+	width: 630px;
 }
 #main {
 	float: left;
@@ -716,5 +719,7 @@ div#parent-fieldname-description.documentDescription {
 .mceToolbar td {
 	width: 25px;
 }
+/* Calendar Solgema Full-Calendar */
+
 
 /* @end */
