@@ -43,9 +43,9 @@
        </after>
   </rules>
     <!-- header area -->
-<!--    <replace content='//*[@id="portal-logo"]'    
-               theme='//*[@id="logo-a"]' />-->
-
+    <replace theme='//*[@id="stslogo"]'
+	    content='//*[@id="portal-logo"]' />
+	    
     <replace content='//*[@id="portal-globalnav"]' 
             theme='//*[@id="links"]' />
 
