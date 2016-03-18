@@ -105,7 +105,7 @@ a img {
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	background: url(imgs/darken2.png) no-repeat 0 0;
+	background: url(../images/darken2.png) no-repeat 0 0;
 }
 body {
 	/*background: url(img/technology.jpg) fixed center top;*/
@@ -128,7 +128,7 @@ body, #menu a:hover, #menu li.active a {
 #header {
 	z-index: 2;
 	position: relative;
-	background: url(imgs/whitebig.gif) repeat-y 0 0;
+	background: url(../images/whitebig.gif) repeat-y 0 0;
 	padding-bottom: 20px;
 	width: 820px;
 }
@@ -153,7 +153,7 @@ body, #menu a:hover, #menu li.active a {
 	line-height: 1.5;
 }
 #main img {
-		max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+		max-width: 100%; /* When ../images are too wide for containing element, force them to fit. */
 		height: auto; /* Override height to match resized width for correct aspect ratio. */	
 }
 #mainz {
@@ -212,7 +212,7 @@ body, #menu a:hover, #menu li.active a {
 
 #menu li {
 	/*background-color: #fff;*/
-		background: url(imgs/whitebig.gif) repeat-y 0 0;
+		background: url(../images/whitebig.gif) repeat-y 0 0;
 
 }
 
@@ -277,13 +277,13 @@ body, #menu a:hover, #menu li.active a {
 	width: 100%;
 	height: 100%;
 	display: block;
-	background: url(imgs/stsatucd.png);
+	background: url(../images/stsatucd.png);
 }
 #ucdlogo span {
 	width: 100%;
 	height: 100%;
 	display: block;
-	background: url(imgs/stsatucd.png) 0 -54px;
+	background: url(../images/stsatucd.png) 0 -54px;
 }
 #headertext {
 	width: 390px;
@@ -379,7 +379,7 @@ body, #menu a:hover, #menu li.active a {
 .portlet,.sidebar,.portlets-manager {
 	padding: 10px;
 	margin-bottom: 1px;
-	background-image: url(imgs/whitesmall.png);
+	background-image: url(../images/whitesmall.png);
 }
 #sidebar .managePortletsLink {
 	background: #000;
@@ -416,7 +416,7 @@ body, #menu a:hover, #menu li.active a {
 #bg-info {
 	display: none;
 	position: fixed;
-	background-image: url(imgs/whitesmall.png);
+	background-image: url(../images/whitesmall.png);
 	z-index: 4;
 	top: 0;
 	right: 0;

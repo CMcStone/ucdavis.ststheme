@@ -7,15 +7,17 @@ $(document).ready(function(){
 //     use single quotation marks instead: <a href='http://maartenottens.com'>link</a>
 
 	var img_color = new Array(
-		[	"1e_1-2.jpg","#FFFF91",
+		[	"1e_1-2.jpg","#BA573B",
 			"<p><a href='http://mmott.com'>about</a> no 1</p>"],
-		[	"cfsem-big.jpg","#FFFF91",
+		[	"cfsem-big.jpg","#060606",
 			"<p>about no 2</p>"],
-		[	"IMG_2297-2.jpg","#FFFF91",
+		[	"AthanasiusKircher.jpg","#060606",
+			"<p><a href='humans/dstolz'>from Stolzenberg</a> Athanasius Kircher's physical proof that the tower of Babel couldn't reach to heaven.</p>"],
+		[	"IMG_2297-2.jpg","#7B844D",
 			"<p>about no 3</p>"],
-		[	"Slide28.JPG","#FFFF91",
+		[	"Slide28.JPG","#5DAD4B",
 			"<p>about no 4</p>"],
-		[	"wires2_4_21_00.jpg","#FFFF91",
+		[	"wires2_4_21_00.jpg","#614B3A",
 			"<p>about no 5</p>"],
 		[	"cfsem4.jpg","#060606",
 			"<p>about no 6</p>"],
@@ -43,10 +45,23 @@ $(document).ready(function(){
 //     use single quotation marks instead: <a href='http://maartenottens.com'>link</a>
 
 	var head_text = new Array(
+		"<p>STS looks at how science fiction and nanotechnology research have co-produced each other.</p>",
+		"<p>The history of science is STS</p>",
+		"<p>The philsophy of science is STS</p>",
+		"<p>The anthropology of science is STS</p>",
+		"<p>STS attends to the history of forms of knowledge making.</p>",
+		"<p><a href='http://www.news.cornell.edu/stories/Oct08/STS.cw.html'>STS seeks to understand how science and technology move through the world, and how people incorporate them into their lives or build new kinds of lives using them.</a></p>",
+		"<p>STS prepares students for life and work in a technoscience-based society.</p>",
+		"<p>STS researchers want to understand how science and technology as forms of knowledge are produced; how their credibility is tested; how they change over time.</p>",
+		"<p><a href='summer-workshop'>STS runs a summer workshop for graduate students and faculty in California</a></p>",
+		"<p>STS studies how science changes.</p>",
+		"<p>Science studies asks who gets to ask the questions.</p>",
+		"<p>STS asks where nature ends and culture starts.</p>",
+		"<p>Science studies asks what counts as science, where, and for whom.</p>",
 		"<p>STS Reaches for the stars.</p>",
-		"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-		"<p>Consectetur adipiscing elit. Pellentesque sit amet turpis enim.</p>"
-	);
+		"<p>STS asks where nature ends and culture starts.</p>",
+		"<p>Science studies tends not to ask what science is but rather how science works.</p>"
+	); 
 
 // get a random img and a random text
 	
