@@ -142,7 +142,7 @@ body, #menu a:hover, #menu li.active a {
 	/*border-top: 1px dotted #2a466f;*/	
 }
 #main.full-width {
-	width: 630px;
+	width: initial;
 }
 #main {
 	float: left;
