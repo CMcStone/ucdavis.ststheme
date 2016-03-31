@@ -5,8 +5,11 @@
 	<theme href="frontpage.html" css:if-content="body.section-front-page"/>-->
 
 <!--<theme css:if-content="body.section-front-page" href="frontpage.html"/>-->
+	
+	<rules css:if-content="#visual-portal-wrapper" >
 	<theme css:if-content="body.template-solgemafullcalendar_view" href="index_cal.html" />
 <theme href="index.html"/>
+	
 
     <!-- title -->
     <replace content='/html/head/title'    
@@ -86,3 +89,4 @@
    <drop content='//*/dl/dd/a/img' /> 
 
 </rules> 
+</rules>
