@@ -1,6 +1,7 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
-	    xmlns:css="http://namespaces.plone.org/diazo/css"
-	    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude">
 	<!--<theme href="index.html"/>
 	<theme href="frontpage.html" css:if-content="body.section-front-page"/>-->
 
@@ -12,30 +13,31 @@
 	
 
     <!-- title -->
-    <replace content='/html/head/title'    
-               theme='/html/head/title' />
-			   
-	<!-- Base tag -->
-    <replace theme="/html/head/base" content="/html/head/base" />
-
-    <prepend theme="/html/head" content="/html/head/link | /html/head/style" />
-    <!--drop the css I don't want -->
-    <drop css:content="link[href*='reset']" />
-          <drop css:content="link[href$='forms.css']" />
-          <drop css:content="link[href$='controlpanel.css']" />
-          <drop css:content="link[href$='authoring.css']" />
-          <drop css:content="link[href$='public.css']" />
-          <drop css:content="link[href$='columns.css']" />
-          <drop css:content="link[href$='portlets.css']" />
-          <drop css:content="link[href$='discussion.css']" />
-          <drop css:content="link[href$='ploneKss.css']" />
-          <drop css:content="link[href$='print.css']" />
-          <drop css:content="link[href$='mobile.css']" />
-          <drop css:content="link[href*='base']" />
-		<drop css:content="link[href$='ploneCustom.css']" />
-
-    <prepend theme="/html/head" content="/html/head/script" />
     
+      <!-- Header -->
+        <drop css:theme="meta[http-equiv='Content-type']" />
+        <drop css:content="meta[name='viewport']" />
+        <drop css:content="link[href*='reset']" />
+        <drop css:content="link[href$='authoring.css']" />
+        <drop css:content="link[href$='forms.css']" />
+        <drop css:content="link[href$='controlpanel.css']" />
+        <drop css:content="link[href$='public.css']" />
+        <drop css:content="link[href$='columns.css']" />
+        <drop css:content="link[href$='portlets.css']" />
+        <drop css:content="link[href$='discussion.css']" />
+        <drop css:content="link[href$='ploneKss.css']" />
+        <drop css:content="link[href$='print.css']" />
+        <drop css:content="link[href$='mobile.css']" />
+        <drop css:content="link[href*='base']" />
+        <before content="/html/head/meta" css:theme="meta[name='viewport']" />
+        <before content="/html/head/base" theme="/html/head/title" />
+        <replace theme='/html/head/title' content='/html/head/title' />
+        <after css:content="head link:not([href*='ploneCustom'])" theme="/html/head/title" />
+        <after content="/html/head/style | /html/head/script" theme="/html/head/title" />
+        <after css:content="head link[href*='ploneCustom']" theme-children="/html/head" />
+
+
+
     <prepend content="/html/body/@class" theme="/html/body" /> 
 
     <rules css:if-content="body.template-solgemafullcalendar_view">
